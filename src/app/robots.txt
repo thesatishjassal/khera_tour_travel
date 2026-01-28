@@ -1,0 +1,11 @@
+// robots.js
+export default function robots() {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: '/private/',
+    },
+    sitemap: 'https://jaimaatoursandtravel.vercel.app/sitemap.xml',
+  };
+}

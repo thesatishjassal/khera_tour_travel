@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",  // Base directory to resolve non-relative module names
+    "paths": {
+      "@/*": ["src/*"]  // Path alias for the `src` directory
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.js", "**/*.jsx"],  // Files to include in the project
+  "exclude": ["node_modules"]  // Directories to exclude
+}
