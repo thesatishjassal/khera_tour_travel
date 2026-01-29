@@ -44,7 +44,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -74,7 +74,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -104,7 +104,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -134,7 +134,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -164,7 +164,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -194,7 +194,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -228,7 +228,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>
@@ -261,7 +261,7 @@ export default function Taxi() {
                         </li>
                       </ul>
                     </div>
-                    <a href="tel:+91 88476 90213" className="theme-btn">
+                    <a href="tel:+91 95010 98488" className="theme-btn">
                       Book Taxi Now<i className="fa fa-arrow-right"></i>
                     </a>
                   </div>

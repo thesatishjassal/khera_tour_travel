@@ -47,8 +47,8 @@ export default function Contact() {
                       <h5>Call Us</h5>
                       <p>
                         {" "}
-                        <a href="tel:+91 88476 90213">
-                          <i className="fa fa-phone-volume"></i> +91 88476 90213
+                        <a href="tel:+91 95010 98488">
+                          <i className="fa fa-phone-volume"></i> +91 95010 98488
                         </a>
                       </p>
                     </div>
@@ -62,8 +62,8 @@ export default function Contact() {
                     <div className="contact-info-content">
                       <h5>Email Us</h5>
                       <p>
-                        <a href="mailto:+radheradhetourandtravells@gmail.com">
-                          radheradhetourandtravells@gmail.com
+                        <a href="mailto:+kheratoursandtravel@gmail.com">
+                          kheratoursandtravel@gmail.com
                         </a>
                       </p>
                     </div>

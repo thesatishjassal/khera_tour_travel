@@ -48,7 +48,7 @@ export default function Packages() {
                       Enjoy stress-free weekend trips with our cab services to
                       popular destinations like Agra and Shimla.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -72,7 +72,7 @@ export default function Packages() {
                       Experience seamless airport transfers with our reliable
                       cab services to and from major airports.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -96,7 +96,7 @@ export default function Packages() {
                       Celebrate your love with romantic cab services to dreamy
                       destinations like Manali and Ooty.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -120,7 +120,7 @@ export default function Packages() {
                       Plan unforgettable family trips with our kid-friendly cab
                       services to exciting destinations.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -144,7 +144,7 @@ export default function Packages() {
                       Discover thrilling adventure spots with our cab services
                       for trekking and outdoor activities.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -168,7 +168,7 @@ export default function Packages() {
                       Immerse yourself in rich culture with our cab services for
                       heritage and cultural tours.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -192,7 +192,7 @@ export default function Packages() {
                       . Customized cab services for business trips and corporate
                       events to ensure a professional experience.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>
@@ -216,7 +216,7 @@ export default function Packages() {
                       Take advantage of special packages during holidays and
                       festivals for unforgettable experiences.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now
                     </a>
                   </div>

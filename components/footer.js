@@ -10,29 +10,29 @@ const Footer = () => {
                   <img src="../Images/white-logo.png" alt="" />
                 </a>
                 <p className="mb-3">
-                  Radhe Radhe Tour and Travels offers reliable and efficient
+                  Khera Tour and Travel offers reliable and efficient
                   travel services, ensuring a seamless and enjoyable journey.
                   Count on us for exceptional service and unforgettable travel
                   experiences.{" "}
                 </p>
                 <ul className="footer-contact">
                   <li>
-                    <a href="tel:+91 88476 90213">
-                      <i className="fa fa-phone"></i>+91 88476 90213
+                    <a href="tel:+91 95010 98488">
+                      <i className="fa fa-phone"></i>+91 95010 98488
                     </a>
                   </li>
 
                   <li>
-                    <a href="mailto:radheradhetourandtravells@gmail.com">
+                    <a href="mailto:kheratoursandtravel@gmail.com">
                       <i className="fa fa-envelope"></i>
-                      radheradhetourandtravells@gmail.com
+                      kheratoursandtravel@gmail.com
                     </a>
                   </li>
 
                   <li>
                     <div>
                       <i className="fa fa-location"></i>
-                      <strong>Radhe Radhe Tour and Travels</strong>
+                      <strong>Khera Tour and Travel</strong>
                       <br />
                       Shop No. 231, Guru Ramdas Market Dugri Phase 1, near
                       Bharat Petrol Pump, Punjab 141013
@@ -107,7 +107,7 @@ const Footer = () => {
             <div className="col-md-6 align-self-center">
               <p className="copyright-text">
                 © Copyright <span id="date">2024</span>
-                <a href="#">&nbsp; Radhe Radhe Tour and Travels </a> All Rights
+                <a href="#">&nbsp; Khera Tour and Travel </a> All Rights
                 Reserved.
               </p>
             </div>

@@ -34,15 +34,15 @@ export default function Home() {
               <ul>
                 <li>
                   <h6>Email</h6>
-                  <a href="mailto:radheradhetourandtravells@gmail.com">
+                  <a href="mailto:kheratoursandtravel@gmail.com">
                     <i className="fa fa-envelope"></i>
-                    radheradhetourandtravells@gmail.com
+                    kheratoursandtravel@gmail.com
                   </a>
                 </li>
                 <li>
                   <h6>Phone</h6>
                   <a href="tel:+21236547898">
-                    <i className="fa fa-phone"></i>+91 88476 90213
+                    <i className="fa fa-phone"></i>+91 95010 98488
                   </a>
                 </li>
                 <li>
@@ -59,16 +59,16 @@ export default function Home() {
             </div>
             <div className="sidebar-social">
               <h4>Follow Us</h4>
-              <a href="tel:+91 88476 90213">
+              <a href="tel:+91 95010 98488">
                 <i className="fab fa-facebook"></i>
               </a>
-              <a href="tel:+91 88476 90213">
+              <a href="tel:+91 95010 98488">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="tel:+91 88476 90213">
+              <a href="tel:+91 95010 98488">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="tel:+91 88476 90213">
+              <a href="tel:+91 95010 98488">
                 <i className="fab fa-linkedin"></i>
               </a>
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
                 <div className="destination-info">
                   <h3>Shimla</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -136,7 +136,7 @@ export default function Home() {
                 <div className="destination-info">
                   <h3>Manali</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="destination-info">
                   <h3>Amritsar</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -168,7 +168,7 @@ export default function Home() {
                 <div className="destination-info">
                   <h3>McLeodganj</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -184,7 +184,7 @@ export default function Home() {
                 <div className="destination-info">
                   <h3>Chandigarh</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -200,7 +200,7 @@ export default function Home() {
                 <div className="destination-info">
                   <h3> Leh & Ladakh</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -244,7 +244,7 @@ export default function Home() {
                     <div className="text-block">
                       <h3>Toyota Innova Crysta</h3>
                       <p>6+1 (7-seater) / 7+1 (8-seater)</p>
-                      <a href="tel:+91 88476 90213" className="call-now-link">
+                      <a href="tel:+91 95010 98488" className="call-now-link">
                         Enquire Now &nbsp;{" "}
                         <i className="fa-solid fa-phone-flip"></i>
                       </a>{" "}
@@ -266,7 +266,7 @@ export default function Home() {
                     <div className="text-block">
                       <h3>Toyota Fortuner</h3>
                       <p>6+1 (7-seater)</p>
-                      <a href="tel:+91 88476 90213" className="call-now-link">
+                      <a href="tel:+91 95010 98488" className="call-now-link">
                         Enquire Now &nbsp;{" "}
                         <i className="fa-solid fa-phone-flip"></i>
                       </a>{" "}
@@ -288,7 +288,7 @@ export default function Home() {
                     <div className="text-block">
                       <h3>Force Tempo Traveller</h3>
                       <p>12+1 (13-seater)</p>
-                      <a href="tel:+91 88476 90213" className="call-now-link">
+                      <a href="tel:+91 95010 98488" className="call-now-link">
                         Enquire Now &nbsp;{" "}
                         <i className="fa-solid fa-phone-flip"></i>
                       </a>{" "}
@@ -310,7 +310,7 @@ export default function Home() {
                     <div className="text-block">
                       <h3>Maruti Suzuki Dzire</h3>
                       <p>4+1 (5-seater)</p>
-                      <a href="tel:+91 88476 90213" className="call-now-link">
+                      <a href="tel:+91 95010 98488" className="call-now-link">
                         Enquire Now &nbsp;{" "}
                         <i className="fa-solid fa-phone-flip"></i>
                       </a>{" "}
@@ -332,7 +332,7 @@ export default function Home() {
                     <div className="text-block">
                       <h3>Force Urbania</h3>
                       <p>17+12 (29-seater)</p>
-                      <a href="tel:+91 88476 90213" className="call-now-link">
+                      <a href="tel:+91 95010 98488" className="call-now-link">
                         Enquire Now &nbsp;{" "}
                         <i className="fa-solid fa-phone-flip"></i>
                       </a>{" "}
@@ -354,7 +354,7 @@ export default function Home() {
                     <div className="text-block">
                       <h3>Maruti Suzuki Ertiga</h3>
                       <p>6+1 (7-seater)</p>
-                      <a href="tel:+91 88476 90213" className="call-now-link">
+                      <a href="tel:+91 95010 98488" className="call-now-link">
                         Enquire Now &nbsp;{" "}
                         <i className="fa-solid fa-phone-flip"></i>
                       </a>{" "}
@@ -375,7 +375,7 @@ export default function Home() {
               </div>
               <div className="col-lg-5 text-center text-lg-end">
                 <div className="cta-btn">
-                  <a href="tel:+91 88476 90213" className="theme-btn">
+                  <a href="tel:+91 95010 98488" className="theme-btn">
                     Book Your Cab<i className="fa fa-arrow-right"></i>
                   </a>
                 </div>
@@ -421,7 +421,7 @@ export default function Home() {
                       Enjoy stress-free weekend trips with our cab services to
                       popular destinations like Agra and Shimla.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now{" "}
                     </a>
                   </div>
@@ -445,7 +445,7 @@ export default function Home() {
                       Experience seamless airport transfers with our reliable
                       cab services to and from major airports.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now{" "}
                     </a>
                   </div>
@@ -469,7 +469,7 @@ export default function Home() {
                       Celebrate your love with romantic cab services to dreamy
                       destinations like Manali and Ooty.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now{" "}
                     </a>
                   </div>
@@ -493,7 +493,7 @@ export default function Home() {
                       Plan unforgettable family trips with our kid-friendly cab
                       services to exciting destinations.
                     </p>
-                    <a href="tel:+91 88476 90213" className="call-now-link">
+                    <a href="tel:+91 95010 98488" className="call-now-link">
                       Enquire Now{" "}
                     </a>
                   </div>
@@ -1041,7 +1041,7 @@ export default function Home() {
               </div>
               <div className="col-lg-5 text-center text-lg-end">
                 <div className="cta-btn">
-                  <a href="tel:+91 88476 90213" className="theme-btn">
+                  <a href="tel:+91 95010 98488" className="theme-btn">
                     Book Your Cab<i className="fa fa-arrow-right"></i>
                   </a>
                 </div>

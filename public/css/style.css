@@ -2,14 +2,14 @@
 :root {
   --body-font: "Raleway", system-ui;
   --heading-font: "Inter", sans-serif;
-  --theme-color: #f4a42c;
+  --theme-color: #fdc620;
   --theme-bg-light: #f9f9f9;
   --body-text-color: #757f95;
   --color-white: #ffffff;
   --color-dark: #111111;
   --color-green: #11b76b;
   --color-blue: #0049d0;
-  --color-yellow: #f4a42c;
+  --color-yellow: #fdc620;
   --hero-overlay-color: #01060f;
   --slider-arrow-bg: rgba(255, 255, 255, 0.2);
   --box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
@@ -1569,9 +1569,9 @@ a.ui-button:active,
   padding: 12px 0 0;
 }
 p.cta-label {
-  color: #f4a42c;
+  color: #fdc620;
   font-weight: 700;
-  background: #f4a42c1a;
+  background: #fdc6201a;
   padding: 2px 8px;
   font-size: 13px;
   border-radius: 10px;
@@ -1613,7 +1613,7 @@ p.service-text {
   display: none;
 }
 .call-now-link {
-  color: #f4a42c;
+  color: #fdc620;
   text-align: center;
   display: block;
   font-weight: 700;

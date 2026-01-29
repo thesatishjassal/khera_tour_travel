@@ -83,7 +83,7 @@ export default function About() {
                       </li>
                     </ul>
                   </div>
-                  <a href="tel:+91 88476 90213" className="theme-btn mt-4">
+                  <a href="tel:+91 95010 98488" className="theme-btn mt-4">
                     Call Now<i className="fas fa-arrow-right"></i>
                   </a>
                 </div>

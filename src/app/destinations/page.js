@@ -41,7 +41,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Shimla</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -60,7 +60,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Manali</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -79,7 +79,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Amritsar</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -98,7 +98,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>McLeodganj</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -117,7 +117,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Chandigarh</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -136,7 +136,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3> Leh & Ladakh</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -156,7 +156,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>kasauli </h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -175,7 +175,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Dalhousie </h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -194,7 +194,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Haridwar</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -213,7 +213,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Rishikesh</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -232,7 +232,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Jaipur</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
@@ -251,7 +251,7 @@ export default function Packages() {
                 <div className="destination-info">
                   <h3>Udaipur</h3>
                   <a
-                    href="tel:+91 88476 90213"
+                    href="tel:+91 95010 98488"
                     className="call-now-link white-color"
                   >
                     Enquire Now &nbsp;{" "}
