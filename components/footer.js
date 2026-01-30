@@ -10,9 +10,9 @@ const Footer = () => {
                   <img src="../Images/white-logo.png" alt="" />
                 </a>
                 <p className="mb-3">
-                  Khera Tour and Travel offers reliable and efficient
-                  travel services, ensuring a seamless and enjoyable journey.
-                  Count on us for exceptional service and unforgettable travel
+                  Khera Tour and Travel offers reliable and efficient travel
+                  services, ensuring a seamless and enjoyable journey. Count on
+                  us for exceptional service and unforgettable travel
                   experiences.{" "}
                 </p>
                 <ul className="footer-contact">
@@ -34,8 +34,7 @@ const Footer = () => {
                       <i className="fa fa-location"></i>
                       <strong>Khera Tour and Travel</strong>
                       <br />
-                      Shop No. 231, Guru Ramdas Market Dugri Phase 1, near
-                      Bharat Petrol Pump, Punjab 141013
+                      B2/233 Raj nagar, basti bawakhel, Jalandhar , Pin-144021
                     </div>
                   </li>
                 </ul>

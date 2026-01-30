@@ -55,7 +55,7 @@ const TripTypeSelector = () => {
               Round-Trip
             </label>
           </div>
-          <div
+          {/* <div
             className={`form-check ${
               tripType === "Airport Transfers" ? "active" : ""
             }`}
@@ -72,7 +72,7 @@ const TripTypeSelector = () => {
             <label className="form-check-label" htmlFor="airport">
               Airport
             </label>
-          </div>
+          </div> */}
         </div>
         <p className="cta-label desktop-only">
           Online <i className="fas fa-car"></i> Cab Booking
@@ -82,7 +82,7 @@ const TripTypeSelector = () => {
       {/* Render the corresponding component based on the selected trip type */}
       {tripType === "One-Way" && <OneWay />}
       {tripType === "Round-Trip" && <RoundTrip />}
-      {tripType === "Airport Transfers" && <AirportTransfer />}
+      {/* {tripType === "Airport Transfers" && <AirportTransfer />} */}
     </div>
   );
 };

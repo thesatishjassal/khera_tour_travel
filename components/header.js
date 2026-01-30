@@ -123,10 +123,7 @@ const Header = () => {
               </ul>
               <div className="nav-right">
                 <div className="nav-right-btn mt-2">
-                  <a
-                    href="tel:+91 95010 98488"
-                    className="theme-btn"
-                  >
+                  <a href="tel:+91 95010 98488" className="theme-btn">
                     <span className="fa fa-taxi"></span>Book A Taxi
                   </a>
                 </div>

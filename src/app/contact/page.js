@@ -32,8 +32,7 @@ export default function Contact() {
                       <h5>Office Address</h5>
                       <p>
                         {" "}
-                        Shop No. 231, Guru Ramdas Market Dugri Phase 1, near
-                        Bharat Petrol Pump, Punjab 141013
+                        B2/233 Raj nagar, basti bawakhel, Jalandhar , Pin-144021
                       </p>
                     </div>
                   </div>

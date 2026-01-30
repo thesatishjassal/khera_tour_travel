@@ -1,52 +1,53 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import axios from "axios";
-import { FaCheckCircle } from "react-icons/fa"; // Import a check icon from react-icons
-import 'animate.css/animate.min.css';
+import { FaCheckCircle } from "react-icons/fa";
+import "animate.css/animate.min.css";
+import { sendBooking } from "@/app/actions/sendBooking"; // ← adjust path
 
 const PersonalDetails = ({ formData, setFormData }) => {
-  const [personalData, setPersonalData] = useState({
-    name: "",
-    email: "",
-    phone: ""
-  });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState('');
+  const [status, setStatus] = useState(null); // { success: true/false, message: string }
 
-  // Handle personal details change
   const handleChange = (e) => {
     const { id, value } = e.target;
-    setPersonalData({ ...personalData, [id]: value });
+    setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  // Submit form data to API
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let validationErrors = {};
 
-    if (!personalData.name) validationErrors.name = true;
-    if (!personalData.email) validationErrors.email = true;
-    if (!personalData.phone) validationErrors.phone = true;
+    const validationErrors = {};
+    if (!formData.name) validationErrors.name = true;
+    if (!formData.email) validationErrors.email = true;
+    if (!formData.phone) validationErrors.phone = true;
 
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
-      setLoading(true);
-      setSuccess(''); // Reset success message
-      try {
-        const fullData = { ...formData, ...personalData };
-        const response = await axios.post(
-          `${process.env.NEXT_PUBLIC_API_URL}${formData && formData.url}`, fullData
-        );
-        if (response.status === 200) {
-          setSuccess('Booking submitted successfully!');
-        }
-      } catch (error) {
-        console.error("Error submitting form", error);
-      } finally {
-        setLoading(false);
-      }
+    if (Object.keys(validationErrors).length > 0) return;
+
+    setLoading(true);
+    setStatus(null);
+
+    // Prepare native FormData for Server Action
+    const fd = new FormData();
+    Object.entries(formData).forEach(([key, val]) => {
+      fd.append(key, val || "");
+    });
+
+    const result = await sendBooking(fd);
+
+    setStatus(result);
+    setLoading(false);
+
+    // Optional: clear sensitive fields after success
+    if (result.success) {
+      setFormData((prev) => ({
+        ...prev,
+        name: "",
+        email: "",
+        phone: "",
+      }));
     }
   };
 
@@ -55,7 +56,6 @@ const PersonalDetails = ({ formData, setFormData }) => {
       <h5 className="mb-3">Personal Details</h5>
 
       <div className="row">
-        {/* Name */}
         <div className="col-md-4 mb-3">
           <label htmlFor="name">Name</label>
           <input
@@ -63,14 +63,15 @@ const PersonalDetails = ({ formData, setFormData }) => {
             className={`form-control ${errors.name ? "border-danger" : ""}`}
             id="name"
             placeholder="Enter your full name"
-            value={personalData.name}
+            value={formData.name || ""}
             onChange={handleChange}
             required
           />
-          {errors.name && <p className="text-danger">Please enter your name</p>}
+          {errors.name && (
+            <p className="text-danger small mt-1">Please enter your name</p>
+          )}
         </div>
 
-        {/* Email */}
         <div className="col-md-4 mb-3">
           <label htmlFor="email">Email</label>
           <input
@@ -78,54 +79,79 @@ const PersonalDetails = ({ formData, setFormData }) => {
             className={`form-control ${errors.email ? "border-danger" : ""}`}
             id="email"
             placeholder="Enter your email address"
-            value={personalData.email}
+            value={formData.email || ""}
             onChange={handleChange}
             required
           />
-          {errors.email && <p className="text-danger">Please enter a valid email</p>}
+          {errors.email && (
+            <p className="text-danger small mt-1">Please enter a valid email</p>
+          )}
         </div>
 
-        {/* Phone */}
         <div className="col-md-4 mb-3">
           <label htmlFor="phone">Phone</label>
           <input
-            type="text"
+            type="tel"
             className={`form-control ${errors.phone ? "border-danger" : ""}`}
             id="phone"
             placeholder="Enter your phone number"
-            value={personalData.phone}
+            value={formData.phone || ""}
             onChange={handleChange}
             required
           />
-          {errors.phone && <p className="text-danger">Please enter a valid phone number</p>}
+          {errors.phone && (
+            <p className="text-danger small mt-1">
+              Please enter a valid phone number
+            </p>
+          )}
         </div>
       </div>
 
-      {/* Submit Button */}
       <button
         type="submit"
-        className={`theme-btn submit-btn ${loading ? "disabled" : ""}`}  // Green button
+        className={`theme-btn submit-btn w-100 w-md-auto ${loading ? "opacity-75" : ""}`}
         disabled={loading}
         style={{
-          backgroundColor: success ? "#28a745" : "#00BCD4",
-          transition: "background-color 0.3s ease"
+          backgroundColor: status?.success
+            ? "#28a745"
+            : loading
+              ? "#6c757d"
+              : "#00BCD4",
+          transition: "background-color 0.4s ease, transform 0.2s",
+          transform: loading ? "scale(0.98)" : "scale(1)",
         }}
       >
         {loading ? (
           <>
-            <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span
+              className="spinner-border spinner-border-sm me-2"
+              role="status"
+              aria-hidden="true"
+            />
             Submitting...
           </>
+        ) : status?.success ? (
+          "Booking Submitted!"
         ) : (
-          "Submit Booking"
+          "Confirm & Submit Booking"
         )}
       </button>
 
-      {/* Success Message with Check Icon and Animation */}
-      {success && (
-        <div className="d-flex align-items-center mt-3 text-success">
-          <FaCheckCircle className="me-2 animate__animated animate__fadeIn" /> {/* Check icon with animation */}
-          <p className="mb-0">{success}</p>
+      {status && (
+        <div
+          className={`d-flex align-items-center mt-4 p-3 rounded ${
+            status.success
+              ? "bg-success-subtle text-success"
+              : "bg-danger-subtle text-danger"
+          }`}
+        >
+          {status.success ? (
+            <FaCheckCircle
+              className="me-3 animate__animated animate__fadeIn"
+              size={24}
+            />
+          ) : null}
+          <p className="mb-0 fw-medium">{status.message}</p>
         </div>
       )}
     </form>

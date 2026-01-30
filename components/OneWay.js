@@ -1,5 +1,7 @@
+"use client";
 import React, { useState } from "react";
 import PersonalDetails from "./BookTaxi";
+import { sendTaxiBooking } from "@/app/actions/sendTaxiBooking"; // adjust path
 
 const OneWay = () => {
   const [formData, setFormData] = useState({
@@ -8,26 +10,27 @@ const OneWay = () => {
     pickupdate: "",
     carType: "",
     tripType: "One-Way",
-    url: '/api/taxi/onewaytaxi/'
+    // We'll add personal fields here too in step 2
+    name: "",
+    email: "",
+    phone: "",
+    notes: "",
   });
-  const [errors, setErrors] = useState({});
-  const [step, setStep] = useState(1); // 1 for trip details, 2 for personal details
 
-  // Function to handle form input changes
+  const [errors, setErrors] = useState({});
+  const [step, setStep] = useState(1);
+  const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { id, value } = e.target;
-    setFormData({
-      ...formData,
-      [id]: value,
-    });
+    setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  // Function to handle form submission
-  const handleSubmit = (e) => {
+  const handleTripSubmit = (e) => {
     e.preventDefault();
-    let validationErrors = {};
+    const validationErrors = {};
 
-    // Validate the trip details form
     if (!formData.from) validationErrors.from = true;
     if (!formData.to) validationErrors.to = true;
     if (!formData.pickupdate) validationErrors.pickupdate = true;
@@ -35,16 +38,46 @@ const OneWay = () => {
 
     setErrors(validationErrors);
 
-    // If no errors, proceed to step 2 (personal details)
     if (Object.keys(validationErrors).length === 0) {
-      setStep(2); // Move to the next step
+      setStep(2);
+    }
+  };
+
+  const handleFinalSubmit = async () => {
+    setLoading(true);
+    setStatus(null);
+
+    const fd = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      fd.append(key, value);
+    });
+
+    const result = await sendTaxiBooking(fd);
+
+    setStatus(result);
+    setLoading(false);
+
+    if (result.success) {
+      // Optional: reset form or show thank you page
+      setFormData({
+        from: "",
+        to: "",
+        pickupdate: "",
+        carType: "",
+        tripType: "One-Way",
+        name: "",
+        email: "",
+        phone: "",
+        notes: "",
+      });
+      setStep(1); // or redirect / show success component
     }
   };
 
   return (
     <>
       {step === 1 && (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleTripSubmit}>
           <div className="row">
             {/* Where From */}
             <div className="col-md-3 mb-3">
@@ -136,17 +169,29 @@ const OneWay = () => {
               </div>
             </div>
           </div>
-          <button
-            type="submit"
-            className="theme-btn submit-btn"
-          >
+          <button type="submit" className="theme-btn submit-btn">
             Continue <i className="fas fa-arrow-right"></i>
           </button>
         </form>
       )}
 
       {step === 2 && (
-        <PersonalDetails formData={formData} setFormData={setFormData} />
+        <PersonalDetails
+          formData={formData}
+          setFormData={setFormData}
+          onSubmit={handleFinalSubmit} // ← pass this
+          loading={loading}
+          status={status}
+        />
+      )}
+
+      {/* Optional global success/error message */}
+      {status && step === 2 && (
+        <div
+          className={`alert mt-4 ${status.success ? "alert-success" : "alert-danger"}`}
+        >
+          {status.message}
+        </div>
       )}
     </>
   );

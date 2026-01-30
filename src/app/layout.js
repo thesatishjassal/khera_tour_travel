@@ -10,7 +10,8 @@ export default function RootLayout({ children }) {
       <head>
         {/* Primary SEO Meta Tags */}
         <title>
-          🚖 One-Way Taxi Service from Jalandhar to Amritsar, Delhi, Chandigarh & Shimla | Khera Tour and Travel
+          🚖 One-Way Taxi Service from Jalandhar to Amritsar, Delhi, Chandigarh
+          & Shimla | Khera Tour and Travel
         </title>
         <meta
           name="description"
@@ -21,25 +22,37 @@ export default function RootLayout({ children }) {
           content="Jalandhar taxi service, Jalandhar to Delhi cab, Amritsar taxi booking, Chandigarh taxi, Shimla cab service, one-way taxi Jalandhar, Punjab taxi, airport taxi Jalandhar, car rental Punjab, outstation cab service, taxi near Jalandhar"
         />
         <meta name="author" content="Khera Tour and Travel" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://khera-tour-travel.vercel.app" />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Jalandhar Taxi Service | One-Way Cabs to Delhi, Amritsar, Chandigarh & Shimla" />
+        <meta
+          property="og:title"
+          content="Jalandhar Taxi Service | One-Way Cabs to Delhi, Amritsar, Chandigarh & Shimla"
+        />
         <meta
           property="og:description"
           content="Khera Tour and Travel offers one-way and round-trip taxi service from Jalandhar to Delhi, Amritsar, Chandigarh, and Shimla. Reliable drivers, affordable fares!"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://khera-tour-travel.vercel.app" />
+        <meta
+          property="og:url"
+          content="https://khera-tour-travel.vercel.app"
+        />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Jalandhar One-Way Taxi Service | Khera Tour and Travel" />
+        <meta
+          name="twitter:title"
+          content="Jalandhar One-Way Taxi Service | Khera Tour and Travel"
+        />
         <meta
           name="twitter:description"
           content="Affordable and safe taxi rides from Jalandhar to Delhi, Amritsar, Chandigarh, and Shimla. Call +91 95010 98488 to book instantly!"
@@ -76,45 +89,50 @@ export default function RootLayout({ children }) {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "TaxiService",
-            "name": "Khera Tour and Travel",
-            "url": "https://khera-tour-travel.vercel.app",
-            "logo": "https://khera-tour-travel.vercel.app/images/logo.png",
-            "image": "https://khera-tour-travel.vercel.app/images/og-image.jpg",
-            "description":
+            name: "Khera Tour and Travel",
+            url: "https://khera-tour-travel.vercel.app",
+            logo: "https://khera-tour-travel.vercel.app/images/logo.png",
+            image: "https://khera-tour-travel.vercel.app/images/og-image.jpg",
+            description:
               "Trusted taxi service from Jalandhar to Delhi, Amritsar, Chandigarh, and Shimla. 24/7 availability with comfortable cars and professional drivers.",
-            "priceRange": "₹₹",
-            "telephone": "+91 95010 98488",
-            "address": {
+            priceRange: "₹₹",
+            telephone: "+91 95010 98488",
+            address: {
               "@type": "PostalAddress",
-              "streetAddress": "Main Market, Jalandhar, Punjab",
-              "addressLocality": "Jalandhar",
-              "addressRegion": "Punjab",
-              "postalCode": "144001",
-              "addressCountry": "IN"
+              streetAddress: "Main Market, Jalandhar, Punjab",
+              addressLocality: "Jalandhar",
+              addressRegion: "Punjab",
+              postalCode: "144001",
+              addressCountry: "IN",
             },
-            "areaServed": ["Jalandhar", "Delhi", "Amritsar", "Chandigarh", "Shimla"],
-            "serviceType": "One-Way Taxi & Outstation Travel",
-            "sameAs": [
+            areaServed: [
+              "Jalandhar",
+              "Delhi",
+              "Amritsar",
+              "Chandigarh",
+              "Shimla",
+            ],
+            serviceType: "One-Way Taxi & Outstation Travel",
+            sameAs: [
               "https://www.facebook.com/radheradhetourandtravels",
-              "https://www.instagram.com/radheradhetourandtravels"
-            ]
+              "https://www.instagram.com/radheradhetourandtravels",
+            ],
           })}
         </Script>
-<Script
-  id="google-tag-manager"
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-SZWJ33HZ26"
-></Script>
+        <Script
+          id="google-tag-manager"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SZWJ33HZ26"
+        ></Script>
 
-<Script id="google-analytics-inline">
-  {`
+        <Script id="google-analytics-inline">
+          {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-SZWJ33HZ26');
   `}
-</Script>
-
+        </Script>
       </head>
 
       <body>
