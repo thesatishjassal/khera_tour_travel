@@ -242,29 +242,7 @@ export default function Taxi() {
                       alt=""
                     />
                   </div>
-                  <div className="taxi-content">
-                    <div className="taxi-head">
-                      <h4>Toyota Etio</h4>
-                      <span>4+1 (5-seater)</span>
-                    </div>
-                    <div className="taxi-feature">
-                      <ul>
-                        <li>
-                          <i className="fa-solid fa-temperature-arrow-down"></i>{" "}
-                          Air Condition:
-                          <span>Yes</span>
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-pump-soap"></i> Sanitize and
-                          Mask:
-                          <span>Yes</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <a href="tel:+91 95010 98488" className="theme-btn">
-                      Book Taxi Now<i className="fa fa-arrow-right"></i>
-                    </a>
-                  </div>
+                 
                                     <div className="taxi-content">
                     <div className="taxi-head">
                       <h4>Mahindra XUV700</h4>
