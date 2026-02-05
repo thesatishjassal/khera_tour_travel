@@ -236,7 +236,7 @@ export default function Home() {
                   <div className="icon-block">
                     <i className="conexi-icon-taxi"></i>
                     <img
-                      src="./Images/Innova-crysta.png"
+                      src="./Images/Innova-crysta.jpeg"
                       alt="Jalandhar to Delhi One Way Taxi"
                     />
                   </div>
@@ -280,7 +280,7 @@ export default function Home() {
                   <div className="icon-block">
                     <i className="conexi-icon-taxi"></i>
                     <img
-                      src="./Images/tempo-traveller-tempo-traveller-png.png"
+                      src="./Images/tempo-traveller-tempo-traveller-png.jpeg"
                       alt="One Way Taxi from Amritsar to Delhi"
                     />
                   </div>
@@ -302,7 +302,7 @@ export default function Home() {
                   <div className="icon-block">
                     <i className="conexi-icon-taxi"></i>
                     <img
-                      src="./Images/Dizar.png"
+                      src="./Images/Dizar.jpeg"
                       alt="Amritsar to Chandigarh Round Trip Taxi"
                     />
                   </div>
@@ -346,7 +346,7 @@ export default function Home() {
                   <div className="icon-block">
                     <i className="conexi-icon-taxi"></i>
                     <img
-                      src="./Images/Ertiga.png"
+                      src="./Images/Ertiga.jpeg"
                       alt="Jalandhar to Chandigarh One Way Taxi Service"
                     />
                   </div>
@@ -361,7 +361,27 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>         <div className="col-lg-4">
+                <div className="single-taxi-fare-one thm-base-bg hvr-float-shadow">
+                  <div className="icon-block">
+                    <i className="conexi-icon-taxi"></i>
+                    <img
+                      src="./Images/xuv700.jpeg"
+                      alt="Jalandhar to Chandigarh One Way Taxi Service"
+                    />
+                  </div>
+                  <div className="top-block">
+                    <div className="text-block">
+                      <h3>Mahindra XUV700</h3>
+                      <p>6+1 (7-seater)</p>
+                      <a href="tel:+91 95010 98488" className="call-now-link">
+                        Enquire Now &nbsp;{" "}
+                        <i className="fa-solid fa-phone-flip"></i>
+                      </a>{" "}
+                    </div>
+                  </div>
+                </div>
+              </div>  
             </div>
           </div>
         </section>
