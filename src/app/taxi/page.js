@@ -23,7 +23,7 @@ export default function Taxi() {
               <div className="col-md-6 col-lg-4 filter-item cat1 cat2">
                 <div className="taxi-item">
                   <div className="taxi-img">
-                    <img src="../Images/Innova-crysta.png" alt="" />
+                    <img src="../Images/Innova-crysta.jpeg" alt="" />
                   </div>
                   <div className="taxi-content">
                     <div className="taxi-head">
@@ -113,7 +113,7 @@ export default function Taxi() {
               <div className="col-md-6 col-lg-4 filter-item cat1 cat3">
                 <div className="taxi-item">
                   <div className="taxi-img">
-                    <img src="../Images/Dizar.png" alt="" />
+                    <img src="../Images/Dizar.jpeg" alt="" />
                   </div>
                   <div className="taxi-content">
                     <div className="taxi-head">
@@ -173,7 +173,7 @@ export default function Taxi() {
               <div className="col-md-6 col-lg-4 filter-item cat4">
                 <div className="taxi-item">
                   <div className="taxi-img">
-                    <img src="../Images/Ertiga.png" alt="" />
+                    <img src="../Images/Ertiga.jpeg" alt="" />
                   </div>
                   <div className="taxi-content">
                     <div className="taxi-head">
@@ -205,7 +205,7 @@ export default function Taxi() {
                 <div className="taxi-item">
                   <div className="taxi-img">
                     <img
-                      src="../Images/tempo-traveller-tempo-traveller-png.png"
+                      src="../Images/tempo-traveller-tempo-traveller-png.jpeg"
                       alt=""
                     />
                   </div>
@@ -238,7 +238,7 @@ export default function Taxi() {
                 <div className="taxi-item">
                   <div className="taxi-img">
                     <img
-                      src="../Images/toyota-etios-car-hire-servicepng.webp"
+                      src="../Images/xuv700.jpeg"
                       alt=""
                     />
                   </div>
@@ -246,6 +246,29 @@ export default function Taxi() {
                     <div className="taxi-head">
                       <h4>Toyota Etio</h4>
                       <span>4+1 (5-seater)</span>
+                    </div>
+                    <div className="taxi-feature">
+                      <ul>
+                        <li>
+                          <i className="fa-solid fa-temperature-arrow-down"></i>{" "}
+                          Air Condition:
+                          <span>Yes</span>
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-pump-soap"></i> Sanitize and
+                          Mask:
+                          <span>Yes</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <a href="tel:+91 95010 98488" className="theme-btn">
+                      Book Taxi Now<i className="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                                    <div className="taxi-content">
+                    <div className="taxi-head">
+                      <h4>Mahindra XUV700</h4>
+                      <span>6+1 (7-seater)</span>
                     </div>
                     <div className="taxi-feature">
                       <ul>

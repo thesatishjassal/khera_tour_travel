@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import OneWay from "./OneWay";
 import RoundTrip from "./RoundTrip";
-import AirportTransfer from "./airportTransfer";
 import DateTimePicker from "react-datetime-picker";
 
 const TripTypeSelector = () => {
@@ -82,7 +81,6 @@ const TripTypeSelector = () => {
       {/* Render the corresponding component based on the selected trip type */}
       {tripType === "One-Way" && <OneWay />}
       {tripType === "Round-Trip" && <RoundTrip />}
-      {/* {tripType === "Airport Transfers" && <AirportTransfer />} */}
     </div>
   );
 };
