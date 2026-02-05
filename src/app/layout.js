@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         />
 
         {/* Canonical URL */}
-        <link rel="canonical" href="https://khera-tour-travel.vercel.app" />
+        <link rel="canonical" href="https://kheratourandtravel.in" />
 
         {/* Open Graph / Facebook */}
         <meta
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://khera-tour-travel.vercel.app"
+          content="https://kheratourandtravel.in"
         />
         <meta property="og:image" content="/images/og-image.jpg" />
         <meta property="og:locale" content="en_IN" />
@@ -90,9 +90,9 @@ export default function RootLayout({ children }) {
             "@context": "https://schema.org",
             "@type": "TaxiService",
             name: "Khera Tour and Travel",
-            url: "https://khera-tour-travel.vercel.app",
-            logo: "https://khera-tour-travel.vercel.app/images/logo.png",
-            image: "https://khera-tour-travel.vercel.app/images/og-image.jpg",
+            url: "https://kheratourandtravel.in",
+            logo: "https://kheratourandtravel.in/images/logo.png",
+            image: "https://kheratourandtravel.in/images/og-image.jpg",
             description:
               "Trusted taxi service from Jalandhar to Delhi, Amritsar, Chandigarh, and Shimla. 24/7 availability with comfortable cars and professional drivers.",
             priceRange: "₹₹",
@@ -133,6 +133,15 @@ export default function RootLayout({ children }) {
     gtag('config', 'G-SZWJ33HZ26');
   `}
         </Script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"></script>
+<script> {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17920034708');  `}
+</script>
       </head>
 
       <body>

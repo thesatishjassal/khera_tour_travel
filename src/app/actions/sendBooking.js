@@ -124,7 +124,7 @@ Reply to this email to respond quickly.
             <td style="background:#0f172a; color:#cbd5e1; text-align:center; padding:30px; font-size:14px;">
               <p style="margin:0;">
                 <strong>Khera Tours & Travels</strong><br>
-                <a href="https://khera-tour-travel.vercel.app" style="color:#60a5fa; text-decoration:none;">khera-tour-travel.vercel.app</a>
+                <a href="https://kheratourandtravel.in" style="color:#60a5fa; text-decoration:none;">khera-tour-travel.vercel.app</a>
               </p>
               <p style="margin:12px 0 0; opacity:0.8;">
                 Automated message • Booking request received • ${new Date().toLocaleDateString("en-IN")}

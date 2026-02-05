@@ -143,7 +143,7 @@ Reply to this email to contact the customer directly.
             <td style="background:#1e1b4b; color:#e0e7ff; text-align:center; padding:35px; font-size:14px;">
               <p style="margin:0 0 10px;">
                 <strong>Khera Tours & Travels</strong><br>
-                <a href="https://khera-tour-travel.vercel.app" style="color:#c4b5fd; text-decoration:none;">khera-tour-travel.vercel.app</a>
+                <a href="https://kheratourandtravel.in" style="color:#c4b5fd; text-decoration:none;">khera-tour-travel.vercel.app</a>
               </p>
               <p style="margin:10px 0 0; opacity:0.8;">
                 Round-trip request received • ${new Date().toLocaleDateString("en-IN")}
