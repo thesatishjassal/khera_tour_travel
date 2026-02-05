@@ -513,409 +513,44 @@ export default function Home() {
               </div>
             </div>
 
-            <ul className="cab-list">
-              {/* Ludhiana outgoing */}
-              {[
-                {
-                  city: "Delhi",
-                  description:
-                    "Explore India Gate, Red Fort, and the famous Chandni Chowk street food.",
-                },
-                {
-                  city: "Chandigarh",
-                  description:
-                    "Visit Rock Garden, Sukhna Lake, and enjoy the planned city vibe.",
-                },
-                {
-                  city: "Jammu",
-                  description:
-                    "See Raghunath Temple and enjoy local delicacies.",
-                },
-                {
-                  city: "Katra",
-                  description:
-                    "Gateway to Vaishno Devi, a major pilgrimage site.",
-                },
-                {
-                  city: "Manali",
-                  description:
-                    "Famous for snow-capped mountains, adventure sports, and scenic beauty.",
-                },
-                {
-                  city: "Agra",
-                  description:
-                    "Home of the Taj Mahal, Agra Fort, and Mughal history.",
-                },
-                {
-                  city: "Dehradun",
-                  description:
-                    "Explore Robber’s Cave, Sahastradhara, and scenic hills.",
-                },
-                {
-                  city: "Rishikesh",
-                  description:
-                    "Yoga capital of the world, river rafting, and spiritual vibe.",
-                },
-                {
-                  city: "Shimla",
-                  description:
-                    "Hills, Mall Road, Jakhoo Temple, and beautiful sunsets.",
-                },
-                {
-                  city: "Mussoorie",
-                  description:
-                    "Scenic hill station with Mall Road, Kempty Falls, and mountain views.",
-                },
-                {
-                  city: "Haridwar",
-                  description:
-                    "Famous for Ganga Aarti, temples, and spiritual experience.",
-                },
-                {
-                  city: "Amritsar",
-                  description:
-                    "Visit Golden Temple, Wagah Border, and Punjabi cuisine.",
-                },
-                {
-                  city: "Dharamsala",
-                  description: "Hills, Tibetan culture, and Dalai Lama Temple.",
-                },
-                {
-                  city: "Dalhousie",
-                  description:
-                    "Beautiful hill station with colonial architecture and nature walks.",
-                },
-                {
-                  city: "McLeod Ganj",
-                  description:
-                    "Spiritual Tibetan hub with monasteries and cafes.",
-                },
-                {
-                  city: "Vaishno Devi",
-                  description:
-                    "Major pilgrimage destination in the Trikuta Mountains.",
-                },
-                {
-                  city: "Kullu",
-                  description:
-                    "Known for adventure sports, rivers, and scenic beauty.",
-                },
-                {
-                  city: "Kasol",
-                  description:
-                    "Peaceful village, trekking, and Israeli cuisine.",
-                },
-                {
-                  city: "Kufri",
-                  description:
-                    "Small hill resort with skiing and mountain views.",
-                },
-                {
-                  city: "Nainital",
-                  description: "Famous lake, boating, and scenic hills.",
-                },
-              ].map((item, idx) => (
-                <li
-                  key={`ludhiana-${idx}`}
-                  className="border rounded-lg p-4 shadow hover:shadow-lg transition duration-300 flex flex-col justify-between"
-                >
-                  <div>
-                    <h3 className="text-sm font-semibold mb-1">
-                      Ludhiana → {item.city}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-2">
-                      {item.description}
-                    </p>
-                  </div>
-                  <a
-                    href="tel:+918847690213"
-                    className="mt-2 bg-blue-600 text-sm hover:bg-blue-700"
-                  >
-                    Call Now
-                  </a>
-                </li>
-              ))}
+        <ul className="cab-list grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+  {[
+    // Jalandhar routes
+    { from: "Jalandhar", to: "Delhi" },
+    { from: "Jalandhar", to: "Chandigarh" },
+    { from: "Jalandhar", to: "Amritsar" },
+    { from: "Punjab", to: "Delhi" },
 
-              {/* Delhi outgoing */}
-              {[
-                {
-                  city: "Shimla",
-                  description:
-                    "Hills, Mall Road, Jakhoo Temple, and beautiful sunsets.",
-                },
-                {
-                  city: "Manali",
-                  description:
-                    "Snow-capped mountains, adventure sports, and scenic beauty.",
-                },
-                {
-                  city: "Agra",
-                  description: "Taj Mahal, Agra Fort, and Mughal history.",
-                },
-                {
-                  city: "Haridwar",
-                  description:
-                    "Ganga Aarti, temples, and spiritual experience.",
-                },
-                {
-                  city: "Rishikesh",
-                  description: "Yoga, river rafting, and peaceful environment.",
-                },
-                {
-                  city: "Dehradun",
-                  description:
-                    "Robber’s Cave, Sahastradhara, and scenic hills.",
-                },
-                {
-                  city: "Amritsar",
-                  description: "Golden Temple, Wagah Border, Punjabi food.",
-                },
-                {
-                  city: "Chandigarh",
-                  description: "Rock Garden, Sukhna Lake, and modern city.",
-                },
-                {
-                  city: "Ludhiana",
-                  description:
-                    "Industrial city with markets and local cuisine.",
-                },
-                {
-                  city: "Mussoorie",
-                  description: "Hills, Kempty Falls, and mountain views.",
-                },
-                {
-                  city: "Nainital",
-                  description: "Famous lake, boating, and scenic beauty.",
-                },
-                {
-                  city: "Dalhousie",
-                  description: "Colonial architecture and natural beauty.",
-                },
-                {
-                  city: "Dharamsala",
-                  description: "Tibetan culture and Dalai Lama Temple.",
-                },
-                {
-                  city: "Jammu",
-                  description: "Raghunath Temple and local delicacies.",
-                },
-                {
-                  city: "Katra",
-                  description: "Gateway to Vaishno Devi pilgrimage site.",
-                },
-                {
-                  city: "McLeod Ganj",
-                  description:
-                    "Spiritual Tibetan hub with monasteries and cafes.",
-                },
-                {
-                  city: "Kullu",
-                  description: "Adventure sports, rivers, and scenic beauty.",
-                },
-                {
-                  city: "Kasol",
-                  description: "Peaceful village, trekking, and Israeli cafes.",
-                },
-                {
-                  city: "Vaishno Devi",
-                  description: "Pilgrimage destination in Trikuta Mountains.",
-                },
-                {
-                  city: "Kufri",
-                  description: "Skiing and hill station views.",
-                },
-              ].map((item, idx) => (
-                <li
-                  key={`delhi-${idx}`}
-                  className="border rounded-lg p-4 shadow hover:shadow-lg transition duration-300 flex flex-col justify-between"
-                >
-                  <div>
-                    <h3 className="text-sm font-semibold mb-1">
-                      Delhi → {item.city}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-2">
-                      {item.description}
-                    </p>
-                  </div>
-                  ;
-                  <a
-                    href="tel:+918847690213"
-                    className="mt-2 inline-block bg-red-600 text-sm font-medium hover:bg-red-700"
-                  >
-                    Call Now
-                  </a>
-                </li>
-              ))}
+    // Delhi routes
+    { from: "Delhi", to: "Jalandhar" },
+    { from: "Delhi", to: "Chandigarh" },
+    { from: "Delhi", to: "Amritsar" },
+    { from: "Delhi", to: "Punjab" },
+  ].map((route, idx) => (
+    <li
+      key={idx}
+      className="border rounded-lg p-4 shadow hover:shadow-lg transition duration-300 flex flex-col justify-between"
+    >
+      <div>
+        <h3 className="text-sm font-semibold mb-2">
+          {route.from} → {route.to}
+        </h3>
 
-              {/* Amritsar outgoing */}
-              {[
-                {
-                  city: "Delhi",
-                  description: "India Gate, Red Fort, and Chandni Chowk.",
-                },
-                {
-                  city: "Chandigarh",
-                  description: "Rock Garden, Sukhna Lake, and planned city.",
-                },
-                {
-                  city: "Ludhiana",
-                  description: "Markets, food, and industrial hub.",
-                },
-                {
-                  city: "Jammu",
-                  description: "Raghunath Temple and local food.",
-                },
-                { city: "Katra", description: "Vaishno Devi pilgrimage." },
-                {
-                  city: "Manali",
-                  description: "Snow, adventure sports, and hills.",
-                },
-                {
-                  city: "Dharamsala",
-                  description: "Tibetan culture and Dalai Lama Temple.",
-                },
-                {
-                  city: "Dalhousie",
-                  description: "Hill station with colonial architecture.",
-                },
-                {
-                  city: "Shimla",
-                  description: "Mall Road, Jakhoo Temple, and hills.",
-                },
-                {
-                  city: "Kullu",
-                  description: "Adventure sports and scenic rivers.",
-                },
-                {
-                  city: "Kasol",
-                  description: "Trekking and peaceful village vibes.",
-                },
-                {
-                  city: "Kufri",
-                  description: "Small hill resort with skiing.",
-                },
-                {
-                  city: "McLeod Ganj",
-                  description: "Tibetan spiritual hub and cafes.",
-                },
-                { city: "Agra", description: "Taj Mahal, Agra Fort." },
-                { city: "Haridwar", description: "Ganga Aarti and temples." },
-                { city: "Rishikesh", description: "Yoga and river rafting." },
-                {
-                  city: "Vaishno Devi",
-                  description: "Pilgrimage in Trikuta Mountains.",
-                },
-                {
-                  city: "Dehradun",
-                  description: "Robber’s Cave and Sahastradhara.",
-                },
-                {
-                  city: "Mussoorie",
-                  description: "Hills, Kempty Falls, scenic views.",
-                },
-                { city: "Nainital", description: "Famous lake and boating." },
-              ].map((item, idx) => (
-                <li
-                  key={`amritsar-${idx}`}
-                  className="border rounded-lg p-4 shadow hover:shadow-lg transition duration-300 flex flex-col justify-between"
-                >
-                  <div>
-                    <h3 className="text-sm font-semibold mb-1">
-                      Amritsar → {item.city}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-2">
-                      {item.description}
-                    </p>
-                  </div>
-                  <a
-                    href="tel:+918847690213"
-                    className="mt-2 inline-block bg-red-600 text-sm font-medium hover:bg-red-700"
-                  >
-                    Call Now
-                  </a>
-                </li>
-              ))}
+        <p className="text-gray-600 text-sm mb-3">
+          Available for One Way • Round Trip • Cross Route Taxi Service
+        </p>
+      </div>
 
-              {/* Chandigarh outgoing */}
-              {[
-                {
-                  city: "Delhi",
-                  description: "India Gate, Red Fort, Chandni Chowk.",
-                },
-                {
-                  city: "Ludhiana",
-                  description: "Markets, food, and industrial hub.",
-                },
-                {
-                  city: "Amritsar",
-                  description: "Golden Temple and Wagah Border.",
-                },
-                {
-                  city: "Jammu",
-                  description: "Raghunath Temple and local delicacies.",
-                },
-                { city: "Katra", description: "Vaishno Devi pilgrimage." },
-                {
-                  city: "Manali",
-                  description: "Snowy mountains, adventure sports.",
-                },
-                {
-                  city: "Shimla",
-                  description: "Mall Road, Jakhoo Temple, and hills.",
-                },
-                {
-                  city: "Kullu",
-                  description: "Adventure sports, rivers, scenic views.",
-                },
-                {
-                  city: "Kasol",
-                  description: "Trekking and peaceful village.",
-                },
-                { city: "Kufri", description: "Hill resort with skiing." },
-                { city: "McLeod Ganj", description: "Tibetan hub with cafes." },
-                {
-                  city: "Dharamsala",
-                  description: "Dalai Lama Temple and Tibetan culture.",
-                },
-                {
-                  city: "Dalhousie",
-                  description: "Colonial architecture, scenic walks.",
-                },
-                { city: "Mussoorie", description: "Hills, Kempty Falls." },
-                { city: "Rishikesh", description: "Yoga and river rafting." },
-                { city: "Haridwar", description: "Ganga Aarti and temples." },
-                { city: "Agra", description: "Taj Mahal, Agra Fort." },
-                {
-                  city: "Vaishno Devi",
-                  description: "Pilgrimage in Trikuta Mountains.",
-                },
-                {
-                  city: "Dehradun",
-                  description: "Robber’s Cave and Sahastradhara.",
-                },
-                { city: "Nainital", description: "Lake, boating, and hills." },
-              ].map((item, idx) => (
-                <li
-                  key={`chandigarh-${idx}`}
-                  className="border rounded-lg p-4 shadow hover:shadow-lg transition duration-300 flex flex-col justify-between"
-                >
-                  <div>
-                    <h3 className="text-sm font-semibold mb-1">
-                      Chandigarh → {item.city}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-2">
-                      {item.description}
-                    </p>
-                  </div>
-                  <a
-                    href="tel:+918847690213"
-                    className="mt-2 inline-block bg-red-600 text-sm font-medium hover:bg-red-700"
-                  >
-                    Call Now
-                  </a>
-                </li>
-              ))}
-            </ul>
+      <a
+        href="tel:+918847690213"
+        className="mt-2 inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-700"
+      >
+        Call Now
+      </a>
+    </li>
+  ))}
+</ul>
+
           </div>
         </div>
         <div className="feature-area feature-bg py-120">
