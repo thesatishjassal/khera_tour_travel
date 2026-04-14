@@ -45,65 +45,15 @@ export default function RootLayout({ children }) {
             url: "https://kheratourandtravel.in",
           })}
         </Script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"></script>
+<script>
+ {` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        {/* ✅ Google Analytics */}
-        {/* <Script
-          id="google-tag-manager"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SZWJ33HZ26"
-        />
-
-        <Script id="google-analytics-inline">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-SZWJ33HZ26');
-          `}
-        </Script> */}
-
-        {/* ✅ AMP Analytics */}
-        {/* <Script
-          id="amp-script"
-          async
-          custom-element="amp-analytics"
-          src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
-        /> */}
-
-        {/* <amp-analytics type="gtag" data-credentials="include">
-          <Script id="amp-inline-json" type="application/json">
-            {`
-              {
-                "vars": {
-                  "gtag_id": "AW-17920034708",
-                  "config": {
-                    "AW-17920034708": { "groups": "default" }
-                  }
-                },
-                "triggers": {}
-              }
-            `}
-          </Script>
-        </amp-analytics> */}
-
-        {/* ✅ Google Ads (FIXED) */}
-        {/* <Script
-          id="google-ads-src"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"
-        />
-
-        <Script id="google-ads-inline">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17920034708');
-          `}
-        </Script> */}
-
-        {/* ✅ Conversion Script */}
-       
+  gtag('config', 'AW-17920034708');`}
+</script>
 <script>
     {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/L5EsCO7N75scEJSP-OBC'});  `}
 </script>
