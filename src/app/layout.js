@@ -103,6 +103,11 @@ export default function RootLayout({ children }) {
         </Script> */}
 
         {/* ✅ Conversion Script */}
+       
+<script>
+    {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/L5EsCO7N75scEJSP-OBC'});  `}
+</script>
+
         <Script id="gtag-conversion" strategy="afterInteractive">
           {`
             function gtag_report_conversion(url) {
