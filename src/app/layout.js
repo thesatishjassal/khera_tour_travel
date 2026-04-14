@@ -121,7 +121,18 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SZWJ33HZ26"
         ></Script>
-
+        <Script
+          async
+          custom-element="amp-analytics"
+          src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+        ></Script>
+        <amp-analytics type="gtag" data-credentials="include">
+          {" "}
+          <Script type="application/json">
+            {" "}
+            {`{ "vars": { "gtag_id": "AW-17920034708", "config": { "AW-17920034708": { "groups": "default" } } }, "triggers": { } }  `}
+          </Script>{" "}
+        </amp-analytics>
         <Script id="google-analytics-inline">
           {`
     window.dataLayer = window.dataLayer || [];
