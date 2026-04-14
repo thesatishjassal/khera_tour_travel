@@ -45,7 +45,6 @@ export default function RootLayout({ children }) {
             url: "https://kheratourandtravel.in",
           })}
         </Script>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"></script>
 <script>
  {` window.dataLayer = window.dataLayer || [];
