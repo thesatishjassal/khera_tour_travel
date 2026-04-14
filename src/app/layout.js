@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         </Script>
 
         {/* ✅ Google Analytics */}
-        <Script
+        {/* <Script
           id="google-tag-manager"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-SZWJ33HZ26"
@@ -60,17 +60,17 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'G-SZWJ33HZ26');
           `}
-        </Script>
+        </Script> */}
 
         {/* ✅ AMP Analytics */}
-        <Script
+        {/* <Script
           id="amp-script"
           async
           custom-element="amp-analytics"
           src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
-        />
+        /> */}
 
-        <amp-analytics type="gtag" data-credentials="include">
+        {/* <amp-analytics type="gtag" data-credentials="include">
           <Script id="amp-inline-json" type="application/json">
             {`
               {
@@ -84,10 +84,10 @@ export default function RootLayout({ children }) {
               }
             `}
           </Script>
-        </amp-analytics>
+        </amp-analytics> */}
 
         {/* ✅ Google Ads (FIXED) */}
-        <Script
+        {/* <Script
           id="google-ads-src"
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'AW-17920034708');
           `}
-        </Script>
+        </Script> */}
 
         {/* ✅ Conversion Script */}
         <Script id="gtag-conversion" strategy="afterInteractive">
