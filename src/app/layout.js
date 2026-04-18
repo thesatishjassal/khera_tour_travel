@@ -84,6 +84,22 @@ export default function RootLayout({ children }) {
             }
           `}
         </Script>
+        <script>
+          {" "}
+          {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/V4LuCM7v1J0cEJSP-OBC'});   `}{" "}
+        </script>
+        <script
+          async
+          custom-element="amp-analytics"
+          src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+        ></script>
+        <amp-analytics type="gtag" data-credentials="include">
+          {" "}
+          <script type="application/json">
+            {" "}
+            {`{ "vars": { "gtag_id": "AW-17920034708", "config": { "AW-17920034708": { "groups": "default" } } }, "triggers": { } }  `}
+          </script>{" "}
+        </amp-analytics>
       </head>
 
       <body>
