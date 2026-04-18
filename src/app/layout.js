@@ -35,6 +35,14 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"
+        ></script>
+        <script>
+          {" "}
+          {` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17920034708');   `}
+        </script>
 
         {/* ✅ Schema */}
         <Script id="taxi-schema" type="application/ld+json">
@@ -45,17 +53,20 @@ export default function RootLayout({ children }) {
             url: "https://kheratourandtravel.in",
           })}
         </Script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"></script>
-<script>
- {` window.dataLayer = window.dataLayer || [];
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"
+        ></script>
+        <script>
+          {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-17920034708');`}
-</script>
-<script>
-    {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/L5EsCO7N75scEJSP-OBC'});  `}
-</script>
+        </script>
+        <script>
+          {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/L5EsCO7N75scEJSP-OBC'});  `}
+        </script>
 
         <Script id="gtag-conversion" strategy="afterInteractive">
           {`
