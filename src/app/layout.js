@@ -35,16 +35,28 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="/css/style.css" />
-        <script
+
+        {/* Google Ads - Google Tag */}
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"
-        ></script>
-        <script>
-          {" "}
-          {` window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17920034708');   `}
-        </script>
+        />
 
-        {/* ✅ Schema */}
+        <Script id="google-ads-tag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17920034708');
+          `}
+        </Script>
+
+        {/* Taxi Schema */}
         <Script id="taxi-schema" type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -53,60 +65,35 @@ export default function RootLayout({ children }) {
             url: "https://kheratourandtravel.in",
           })}
         </Script>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17920034708"
-        ></script>
-        <script>
-          {` window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-17920034708');`}
-        </script>
-        <script>
-          {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/L5EsCO7N75scEJSP-OBC'});  `}
-        </script>
-
-        <Script id="gtag-conversion" strategy="afterInteractive">
+        {/* Google Ads Conversion Helper */}
+        <Script id="gtag-conversion-helper" strategy="afterInteractive">
           {`
             function gtag_report_conversion(url) {
               var callback = function () {
-                if (typeof(url) != 'undefined') {
+                if (typeof url !== 'undefined') {
                   window.location = url;
                 }
               };
+
               gtag('event', 'conversion', {
                 'send_to': 'AW-17920034708/eP5gCMXt7ZscEJSP-OBC',
                 'event_callback': callback
               });
+
               return false;
             }
           `}
         </Script>
-        <script>
-          {" "}
-          {` gtag('event', 'conversion', {'send_to': 'AW-17920034708/V4LuCM7v1J0cEJSP-OBC'});   `}{" "}
-        </script>
-        <script
-          async
-          custom-element="amp-analytics"
-          src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
-        ></script>
-        <amp-analytics type="gtag" data-credentials="include">
-          {" "}
-          <script type="application/json">
-            {" "}
-            {`{ "vars": { "gtag_id": "AW-17920034708", "config": { "AW-17920034708": { "groups": "default" } } }, "triggers": { } }  `}
-          </script>{" "}
-        </amp-analytics>
       </head>
 
       <body>
         <Header />
+
         {children}
 
         <BottomNav />
+
         <Footer />
 
         {/* External Scripts */}
